@@ -130,7 +130,7 @@
 .hero-content__play-button:hover {
     background: #fff;
     transform: scale(1.05);
-    border: none;
+    border: 1px solid transparent;
 }
 
 .hero-content__play-button img {
