@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+/* other css files imports */
+
+@import url("sections/header.css");
+/*@import url("sections/hero.css");
+@import url("sections/about.css");
+@import url("sections/popular.css");
+@import url("sections/trending.css");
+@import url("sections/subscribe.css");
+@import url("sections/footer.css");*/
+
+/* reusable CSS variables across all files */
+
+:root {
+    --playfair-display: "Playfair Display", serif;
+    --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+
+    --primary-color: #b1454a;
+    --secondary-color: #121212;
+
+    --black-200: #020202;
+    --black-300: #333333;
+    --black-400: #1f1e31;
+    --black-500: #555555;
+    --gray-100: #888888;
+
+    --color-white: #fff;
+    --color-creamson: #fff0de;
+
+    /*ORAAAAANNNNGGGGGEEEEE*/
+    --color-warmamber: #F78328;
+    --color-fieryorange: #ff5b00;
+    --color-deeporange: #FFBE94E7;
+
+    --cream: #FFF8E7;
+    --light-orange: #FAD7A0;
+    --deep-orange: #E67E22;
+    --gold: #F4A261;
+
+    --color-charcoalblack: #14181A;
+    --color-grayishorangebeige: #D9C3B0;
+    --color-backgroundwithmyorangeheader: #f3e8d8;
+
+    --text: #3B2F2F;
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--color-backgroundwithmyorangeheader);
+    /*background-color: var(---color-creamson);*/
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* START ABOUT US MEDIA QUERY */
+@media screen and (max-width: 1024px) {
+    .about-us {
+        flex-direction: column;
+    }
+}
+
+.about-us__image {
+    flex-direction: row;
+}
+
+.about-us__image-sushi3 {
+    border-bottom: none;
+    border-right: 8px solid var(--color-creamson);
+}
+
+@media screen and (max-width: 550px) {
+    .trending__image img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .trending__content {
+        padding: 32px;
+    }
+}
+
+/* END TRENDING MEDIA QUERIES */
