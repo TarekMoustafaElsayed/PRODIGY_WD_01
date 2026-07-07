@@ -33,7 +33,7 @@
 
 .header__menu, .header__menu-mobile{
     padding: 20px;
-    flex: 1.2;
+    flex: 1.236;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -64,3 +64,6 @@
   position: relative;
 }
 
+.header__menu .about-us{
+    word-spacing: 4px;
+}
