@@ -1,4 +1,4 @@
-//Animation script for scrolling to the about us section
+//Animation script for scrolling through the sections
 
 document.addEventListener('DOMContentLoaded', () => {
   const aboutSection = document.querySelector('.about-us');
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, {
-      threshold: 0.25,
+      threshold: 0.30,
       rootMargin: '0px 0px 100px 0px'
     });
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, {
-      threshold: 0.35,
+      threshold: 0.40,
       rootMargin: '0px 0px 150px 0px'
     });
 

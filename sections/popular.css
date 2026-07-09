@@ -31,6 +31,15 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .popular-foods::before{
     content: "本\A食";
     /*食*/
@@ -154,29 +163,62 @@
     gap: 56px;
 }
 
-.popular-foods__button{
-    width: fit-content;
-    padding: 20px 30px;
+.popular-foods__button {
     margin: 80px auto 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    transition: transform 0.3s ease-out;
+}
+
+.popular-foods__button:hover {
+    transform: scale(1.05);
+}
+
+.popular-foods__button-inner {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 30px;
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
+    word-spacing: 5px;
     font-family: var(--plus-jakarta-sans);
     color: #fff;
-    border: none;
-    outline: none;
     background: var(--secondary-color);
     border-radius: 64px;
-    cursor: pointer;
     opacity: 0;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
 }
 
-.popular-foods__button img{
-    width: 14px;
-    height: 14px;
-    object-fit: contain;
+.popular-foods__button:hover .popular-foods__button-inner {
+    background: #fff;
+    color: var(--secondary-color);
+}
 
-    margin-left: 21px;
+.popular-foods__button-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+    transition: transform 0.3s ease-out;
+}
+
+.popular-foods__button-icon::before {
+    content: "→";
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.popular-foods__button:hover .popular-foods__button-icon {
+    transform: translateX(4px);
 }
 
 .popular-foods__card {
@@ -292,6 +334,6 @@
   animation: fadeUp 0.8s ease-out 0.55s forwards;
 }
 
-.popular-foods.is-visible .popular-foods__button {
+.popular-foods.is-visible .popular-foods__button-inner {
   animation: fadeDown 0.8s ease-out 0.7s forwards;
 }
