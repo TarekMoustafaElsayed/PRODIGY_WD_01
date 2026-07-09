@@ -35,4 +35,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     popularObserver.observe(popularSection);
   }
+
+  const trendingSection = document.querySelector('.trending');
+  if (trendingSection) {
+    const trendingObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          trendingSection.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.30,
+      rootMargin: '0px 0px 55px 0px'
+    });
+
+    trendingObserver.observe(trendingSection);
+  }
 });
