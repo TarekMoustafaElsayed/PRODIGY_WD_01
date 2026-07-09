@@ -1,3 +1,36 @@
+@keyframes flipUp {
+  from {
+    opacity: 0;
+    transform: perspective(900px) rotateX(-70deg) translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(900px) rotateX(0deg) translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .popular-foods::before{
     content: "本\A食";
     /*食*/
@@ -57,6 +90,9 @@
     line-height: 78px;
     color: #fff;
     text-align: center;
+    opacity: 0;
+    transform-origin: center bottom;
+    backface-visibility: hidden;
 }
 
 .popular-foods__filters {
@@ -67,6 +103,7 @@
     display: flex;
     justify-content: center;
     gap: 24px;
+    opacity: 0;
 }
 
 .popular-foods__filter-btn {
@@ -131,6 +168,7 @@
     background: var(--secondary-color);
     border-radius: 64px;
     cursor: pointer;
+    opacity: 0;
 }
 
 .popular-foods__button img{
@@ -151,9 +189,9 @@
     flex-direction: column;
 
     border-radius: 36px;
-    /*background: rgba(255, 255, 255, 0.06);*/
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0;
 }
 
 .popular-foods__card-image{
@@ -232,4 +270,28 @@
     font-size: 24px;
     color: var(--secondary-color);
 
+}
+
+.popular-foods.is-visible .popular-foods__title {
+  animation: flipUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.popular-foods.is-visible .popular-foods__filters {
+  animation: fadeUp 0.8s ease-out 0.15s forwards;
+}
+
+.popular-foods.is-visible .popular-foods__card:nth-child(1) {
+  animation: fadeUp 0.8s ease-out 0.25s forwards;
+}
+
+.popular-foods.is-visible .popular-foods__card:nth-child(2) {
+  animation: fadeUp 0.8s ease-out 0.4s forwards;
+}
+
+.popular-foods.is-visible .popular-foods__card:nth-child(3) {
+  animation: fadeUp 0.8s ease-out 0.55s forwards;
+}
+
+.popular-foods.is-visible .popular-foods__button {
+  animation: fadeDown 0.8s ease-out 0.7s forwards;
 }

@@ -1,3 +1,25 @@
+@keyframes fadeFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .about-us {
     display: flex;
     min-height: 720px;
@@ -25,6 +47,7 @@
     clip-path: ellipse(100% 60% at left bottom);
 
     z-index:1;
+    opacity: 0;
 }
 
 .about-us__image-character{
@@ -41,6 +64,7 @@
     z-index: 2;
 
     filter: drop-shadow(25px 15px 20px rgba(0,0,0,0.45));
+    opacity: 0;
 }
 
 .about-us__image div {
@@ -61,4 +85,17 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    opacity: 0;
+}
+
+.about-us.is-visible .about-us__image-overlay {
+  animation: fadeFromLeft 0.4s ease-out forwards;
+}
+
+.about-us.is-visible .about-us__image-character {
+  animation: fadeFromRight 0.8s ease-out 0.1s forwards;
+}
+
+.about-us.is-visible .about-us__content {
+  animation: fadeFromLeft 0.6s ease-out 0.1s forwards;
 }
