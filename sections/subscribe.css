@@ -1,0 +1,119 @@
+/*.subscription::before {
+    /*司*/
+    /*工*/
+    /*ナ*/
+    /*content: "司工ナ";
+    text-orientation: upright;
+    position: absolute;*/
+
+    /*top: -60px;
+    left: 80px;*/
+    /*font-size: 125px;
+    font-weight: 700;
+    writing-mode: vertical-rl;
+    user-select: none;
+    color: rgba(200, 80, 25, 0.15);
+
+    z-index: 0;
+    pointer-events: none;
+}*/
+
+.japanese-bg__left{
+    position:absolute;
+    font-size: 175px;
+    font-weight: 700;
+    user-select: none;
+    color: rgba(200, 80, 25, 0.15);
+    z-index: 0;
+    pointer-events: none;
+    writing-mode: vertical-rl;
+    top: 90px;
+    left: -15px;
+
+}
+
+.japanese-bg__right {
+    position:absolute;
+    font-size: 175px;
+    font-weight: 700;
+    user-select: none;
+    color: rgba(200, 80, 25, 0.15);
+    z-index: 0;
+    pointer-events: none;
+    writing-mode: vertical-rl;
+    top: 90px;
+    right: 30px;
+}
+
+.subscription {
+    padding: 64px;
+    background-color: var(--color-warmamber);
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.subscription h2 {
+    font-size: 88px;
+    font-family: var(--playfair-display);
+    font-weight: 600;
+    line-height: 123px;
+    color: #fff;
+    text-align: center;
+}
+
+.subscription p {
+    font-size: 18px;
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 300;
+    line-height: 36px;
+    margin-top: 32px;
+    color: rgba(255, 255, 255, 0.8);
+    word-spacing: 5px;
+}
+
+.subscription__form {
+    min-width: 480px;
+    margin-top: 40px;
+    padding: 14px 14px 14px 24px;
+    display: flex;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 46px;
+}
+
+.subscription__form input {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.subscription__form input::placeholder {
+    color: var(--secondary-color);
+    opacity: 0.6;
+}
+
+.subscription__form button {
+    padding: 20px;
+    min-width: 180px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: #fff;
+    text-align: center;
+    background: var(--secondary-color);
+    border-radius: 46px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.subscription__form button:hover {
+    color:var(--secondary-color);
+    background: #fff;
+}

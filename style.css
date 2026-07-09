@@ -8,8 +8,8 @@
 @import url("sections/about.css");
 @import url("sections/popular.css");
 @import url("sections/trending.css");
-/*@import url("sections/subscribe.css");
-@import url("sections/footer.css");*/
+@import url("sections/subscribe.css");
+/*@import url("sections/footer.css");*/
 
 /* reusable CSS variables across all files */
 
@@ -51,7 +51,6 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     background-color: var(--color-backgroundwithmyorangeheader);
-    /*background-color: var(---color-creamson);*/
 }
 
 a {
