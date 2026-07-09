@@ -129,6 +129,7 @@
 
 .hero-content__play-button:hover {
     background: #fff;
+    color:#2b2b2b;
     transform: scale(1.05);
     border: 1px solid transparent;
 }

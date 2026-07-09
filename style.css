@@ -97,7 +97,7 @@ a {
   font-size: 16px;
   font-weight: 400;
   font-family: var(--plus-jakarta-sans);
-
+  text-align: justify;
   line-height: 36px;
   letter-spacing: -0.01em;
 
