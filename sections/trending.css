@@ -169,7 +169,7 @@
 }
 
 .trending.is-visible .trending__discover {
-  animation: zoomIn 0.6s ease-out 0.1s forwards;
+  animation: zoomIn 0.7s ease-out 0.1s forwards;
 }
 
 /* sushi: content fades in from right, image fades in from left */
@@ -178,11 +178,11 @@
 }
 
 .trending.is-visible .trending-sushi .trending__content {
-  animation: fadeRight 0.8s ease-out forwards;
+  animation: fadeRight 1s ease-out forwards;
 }
 
 .trending.is-visible .trending-sushi .trending__image > img {
-  animation: fadeLeft 0.8s ease-out 0.1s forwards;
+  animation: fadeLeft 1s ease-out 0.15s forwards;
 }
 
 /* drinks: content fades in from left, image fades in from right */
@@ -191,9 +191,9 @@
 }
 
 .trending.is-visible .trending-drinks .trending__content {
-  animation: fadeLeft 0.8s ease-out 0.1s forwards;
+  animation: fadeLeft 1s ease-out 0.15s forwards;
 }
 
 .trending.is-visible .trending-drinks .trending__image > img {
-  animation: fadeRight 0.8s ease-out 0.1s forwards;
+  animation: fadeRight 1s ease-out 0.15s forwards;
 }

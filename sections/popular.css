@@ -319,21 +319,21 @@
 }
 
 .popular-foods.is-visible .popular-foods__filters {
-  animation: fadeUp 0.8s ease-out 0.15s forwards;
+  animation: fadeUp 0.9s ease-out 0.15s forwards;
 }
 
 .popular-foods.is-visible .popular-foods__card:nth-child(1) {
-  animation: fadeUp 0.8s ease-out 0.25s forwards;
+  animation: fadeUp 0.9s ease-out 0.25s forwards;
 }
 
 .popular-foods.is-visible .popular-foods__card:nth-child(2) {
-  animation: fadeUp 0.8s ease-out 0.4s forwards;
+  animation: fadeUp 0.9s ease-out 0.4s forwards;
 }
 
 .popular-foods.is-visible .popular-foods__card:nth-child(3) {
-  animation: fadeUp 0.8s ease-out 0.55s forwards;
+  animation: fadeUp 0.9s ease-out 0.55s forwards;
 }
 
 .popular-foods.is-visible .popular-foods__button-inner {
-  animation: fadeDown 0.8s ease-out 0.7s forwards;
+  animation: fadeDown 0.9s ease-out 0.7s forwards;
 }

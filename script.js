@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, {
-      threshold: 0.30,
-      rootMargin: '0px 0px 55px 0px'
+      threshold: 0.35,
+      rootMargin: '0px 0px 100px 0px'
     });
 
     trendingObserver.observe(trendingSection);
