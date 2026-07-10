@@ -4,14 +4,34 @@ const reviews = [
   { avatar: 'assets/user-1.JPG', text: '"This sushi restaurant is legendary. 3a4 ya chef dababa!"', pos: '50% 50%' },
   { avatar: 'assets/user-2.jpeg', text: '"The chef is so goofy, he serves the juiciest sushi ever!"', pos: '62% 50%' },
   { avatar: 'assets/user-3.jpeg', text: '"ここのスタッフ、みんなすごく親切でいい人たちだね ya man"', pos: '50% 18%' },
-  { avatar: 'assets/user-4.jpg', text: '"cosplayers assemble! Kazama\'s sushi did it yet again"', pos: '5% 50%' },
+  { avatar: 'assets/user-4.jpg', text: '"cosplayers assemble! Kazama\'s sushi did it once again"', pos: '5% 50%' },
 ];
 
 history.scrollRestoration = 'manual';
 window.scrollTo(0, 0);
 
+const audio = new Audio('assets/The Disaster of Passion (May Theme) - Guilty Gear Strive OST.mp3');
+audio.loop = true;
+
+function toggleMusic() {
+  if (audio.paused) {
+    audio.currentTime = 0;
+    audio.play().catch(() => {});
+  } else {
+    audio.pause();
+  }
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.altKey && e.shiftKey && (e.key === 'o' || e.key === 'O')) {
+    e.preventDefault();
+    toggleMusic();
+  }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   window.scrollTo(0, 0);
+
   const avatar = document.getElementById('review-avatar');
   const text = document.getElementById('review-text');
   const reviewContainer = document.querySelector('.hero-content__review');
