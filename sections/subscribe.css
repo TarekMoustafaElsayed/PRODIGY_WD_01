@@ -126,11 +126,14 @@
     border: none;
     outline: none;
     cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease-out, background-color 0.3s ease-out, color 0.3s ease-out;
 }
 
 .subscription__form button:hover {
     color:var(--secondary-color);
     background: #fff;
+    transform: scale(1.05);
 }
 
 .subscription.is-visible h2 {
