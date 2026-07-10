@@ -1,3 +1,25 @@
+@keyframes swipeOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+
+@keyframes swipeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -256,4 +278,12 @@
     color: var(--secondary-color);
     opacity: 0.8;
     max-width: 260px;
+}
+
+.hero-content__review.swiping .swipe-el {
+    animation: swipeOutRight 0.4s ease-in forwards;
+}
+
+.hero-content__review.swiping-in .swipe-el {
+    animation: swipeInLeft 0.4s ease-out forwards;
 }
