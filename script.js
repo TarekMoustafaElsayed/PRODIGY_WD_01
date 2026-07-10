@@ -87,4 +87,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     trendingObserver.observe(trendingSection);
   }
+
+  const tensEl = document.getElementById('counter-tens');
+  const unitsEl = document.getElementById('counter-units');
+  if (tensEl && unitsEl) {
+    let current = 46;
+    let direction = 'up';
+
+    function getDigits(num) {
+      return { tens: Math.floor(num / 10), units: num % 10 };
+    }
+
+    function animateDigit(el, className) {
+      el.classList.remove('animate-fade-up', 'animate-fade-down');
+      void el.offsetWidth;
+      el.classList.add(className);
+    }
+
+    function updateCounter() {
+      const prev = getDigits(current);
+      if (direction === 'up') {
+        current++;
+        if (current === 50) direction = 'down';
+      } else {
+        current--;
+        if (current === 46) direction = 'up';
+      }
+      const next = getDigits(current);
+
+      if (prev.tens !== next.tens) {
+        tensEl.textContent = String(next.tens);
+        unitsEl.textContent = String(next.units);
+        animateDigit(tensEl, direction === 'up' ? 'animate-fade-up' : 'animate-fade-down');
+        animateDigit(unitsEl, direction === 'up' ? 'animate-fade-up' : 'animate-fade-down');
+      } else {
+        unitsEl.textContent = String(next.units);
+        animateDigit(unitsEl, direction === 'up' ? 'animate-fade-up' : 'animate-fade-down');
+      }
+    }
+
+    setInterval(updateCounter, 5000);
+  }
 });
