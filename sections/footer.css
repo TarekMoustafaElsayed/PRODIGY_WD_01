@@ -7,6 +7,11 @@
     gap: 20px;
 
     overflow: hidden;
+    opacity: 0;
+}
+
+.footer.is-visible {
+  animation: fadeUp 0.9s ease-out forwards;
 }
 
 .footer__logo{

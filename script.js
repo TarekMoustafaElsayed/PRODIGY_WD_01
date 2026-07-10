@@ -88,6 +88,38 @@ document.addEventListener('DOMContentLoaded', () => {
     trendingObserver.observe(trendingSection);
   }
 
+  const subscriptionSection = document.querySelector('.subscription');
+  if (subscriptionSection) {
+    const subObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          subscriptionSection.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.30,
+      rootMargin: '0px 0px 100px 0px'
+    });
+    subObserver.observe(subscriptionSection);
+  }
+
+  const footerSection = document.querySelector('.footer');
+  if (footerSection) {
+    const footerObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          footerSection.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.30,
+      rootMargin: '0px 0px 100px 0px'
+    });
+    footerObserver.observe(footerSection);
+  }
+
   const tensEl = document.getElementById('counter-tens');
   const unitsEl = document.getElementById('counter-units');
   if (tensEl && unitsEl) {
