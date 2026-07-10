@@ -7,7 +7,11 @@ const reviews = [
   { avatar: 'assets/user-4.jpg', text: '"cosplayers assemble! Kazama\'s sushi did it yet again"', pos: '5% 50%' },
 ];
 
+history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
+
 document.addEventListener('DOMContentLoaded', () => {
+  window.scrollTo(0, 0);
   const avatar = document.getElementById('review-avatar');
   const text = document.getElementById('review-text');
   const reviewContainer = document.querySelector('.hero-content__review');
