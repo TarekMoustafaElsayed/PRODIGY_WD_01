@@ -73,6 +73,7 @@ Special thanks to the following volunteers for their contributions and support:
 | Zeyad Tantawy | [@Zeyad-Tantawy1](https://github.com/Zeyad-Tantawy1) | [LinkedIn](https://www.linkedin.com/in/zeyad-tantawy/) |
 | Mohamed Koshty | [@Koshty](https://github.com/Koshty) | [LinkedIn](https://www.linkedin.com/in/mohamed-koshty-875360279/) |
 | Mohamed (Jaxon) Mostafa | [@theJaxon](https://github.com/theJaxon) | [LinkedIn](https://www.linkedin.com/in/mohamedmostafaels/) |
+| Youssef Hussein | [@youssefhussein](https://github.com/youssefhussein) | [LinkedIn](https://www.linkedin.com/in/youssef-hussein-230782243/) |
 
 ---
 

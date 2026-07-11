@@ -3,8 +3,9 @@
 const reviews = [
   { avatar: 'assets/user-1.JPG', text: '"This sushi restaurant is legendary. 3a4 ya chef dababa!"', pos: '50% 50%' },
   { avatar: 'assets/user-2.jpeg', text: '"The chef is so goofy, he serves the juiciest sushi ever!"', pos: '62% 50%' },
-  { avatar: 'assets/user-3.jpeg', text: '"ここのスタッフ、みんなすごく親切でいい人たちだね ya man"', pos: '50% 18%' },
-  { avatar: 'assets/user-4.jpg', text: '"cosplayers assemble! Kazama\'s sushi did it once again"', pos: '5% 50%' },
+  { avatar: 'assets/user-3.jpg', text: '"The sushi here is to die for 😋 I wanna eat here forever and ever!"', pos: '50% 38%' },
+  { avatar: 'assets/user-4.jpeg', text: '"ここのスタッフ、みんなすごく親切でいい人たちだね ya man"', pos: '50% 18%' },
+  { avatar: 'assets/user-5.jpg', text: '"cosplayers assemble! Kazama\'s sushi did it once again"', pos: '5% 50%' },
 ];
 
 history.scrollRestoration = 'manual';
