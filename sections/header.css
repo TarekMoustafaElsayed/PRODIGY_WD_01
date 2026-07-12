@@ -66,6 +66,14 @@
     transition: transform 0.3s ease-out;
 }
 
+.header__menu li:last-child:hover {
+    transform: none;
+}
+
+.header__menu li:last-child::after {
+    display: none;
+}
+
 .header__menu li::after {
     content: '';
     position: absolute;
