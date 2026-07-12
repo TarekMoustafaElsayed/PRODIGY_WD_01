@@ -1,11 +1,11 @@
 @keyframes zoomIn {
   from {
     opacity: 0;
-    transform: scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -77,10 +77,12 @@
 .trending__image {
     flex: 1;
     position: relative;
-    padding: 32px 64px;
+    padding: 32px 48px;
 
     background-color: var(--color-white);
 }
+
+
 
 .trending-sushi .trending__image::before {
     content: "ツナ";
@@ -133,8 +135,9 @@
 
 .trending__discover {
     position: absolute;
-    top: 44%;
-    left: 44%;
+    top: 49%;
+    left: 51%;
+    transform: translate(-50%, -50%);
     z-index: 1;
     width: 160px;
     height: 160px;

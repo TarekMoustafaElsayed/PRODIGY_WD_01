@@ -86,6 +86,58 @@ document.addEventListener('DOMContentLoaded', () => {
         if (entry.isIntersecting) {
           popularSection.classList.add('is-visible');
           obs.unobserve(entry.target);
+
+          const catalogue = document.querySelector('.popular-foods__catalogue');
+          const allCards = [...catalogue.querySelectorAll('.popular-foods__card')];
+          const order = Array.from({length: 7}, (_, i) => i);
+
+          setTimeout(function rotate() {
+            const [l, c, r, n] = order.slice(0, 4);
+
+            [allCards[l], allCards[c], allCards[r]].forEach(el => {
+              el.style.animation = 'swipeRightOut 0.5s cubic-bezier(0.0, 0.0, 0.2, 1) forwards';
+              el.classList.add('swipe-out');
+            });
+
+            setTimeout(() => {
+              [allCards[l], allCards[c], allCards[r], allCards[n]].forEach(el => {
+                el.style.animation = 'none';
+                el.style.transform = '';
+                el.style.opacity = '';
+                el.classList.remove('active-card', 'swipe-out', 'swipe-in', 'hidden-card');
+              });
+
+              const first4 = order.splice(0, 4);
+              order.unshift(first4[3], first4[0], first4[1]);
+              order.push(first4[2]);
+
+              allCards.forEach(el => { el.style.display = 'none'; });
+              [order[0], order[1], order[2]].forEach(i => {
+                allCards[i].style.display = '';
+                allCards[i].style.transform = 'translateX(-300px) rotate(-6deg) scale(0.85)';
+                allCards[i].style.opacity = '0';
+                allCards[i].classList.remove('hidden-card');
+              });
+              void allCards[order[0]].offsetWidth;
+
+              [order[0], order[1], order[2]].forEach(i => {
+                allCards[i].style.animation = 'swipeRightIn 0.5s cubic-bezier(0.0, 0.0, 0.2, 1) forwards';
+              });
+              allCards[order[1]].classList.add('active-card');
+
+              catalogue.replaceChildren(allCards[order[0]], allCards[order[1]], allCards[order[2]],
+                ...allCards.filter((_, i) => ![order[0], order[1], order[2]].includes(i)));
+
+              setTimeout(() => {
+                [order[0], order[1], order[2]].forEach(i => {
+                  allCards[i].style.animation = 'none';
+                  allCards[i].style.transform = '';
+                  allCards[i].style.opacity = '1';
+                });
+                setTimeout(rotate, 4000);
+              }, 500);
+            }, 500);
+          }, 4000);
         }
       });
     }, {

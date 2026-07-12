@@ -332,3 +332,52 @@
 .popular-foods.is-visible .popular-foods__button-inner {
   animation: fadeDown 0.9s ease-out 0.7s forwards;
 }
+
+.popular-foods__card.hidden-card {
+  display: none;
+}
+
+@keyframes swipeRightOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(60px) rotate(3deg) scale(0.98);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(380px) rotate(10deg) scale(0.85);
+  }
+}
+
+@keyframes swipeRightIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px) rotate(-6deg) scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-30px) rotate(-1deg) scale(0.99);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes shiftRight {
+  from {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(290px) scale(1);
+  }
+}
+
+.popular-foods__card.swipe-out {
+  pointer-events: none;
+}

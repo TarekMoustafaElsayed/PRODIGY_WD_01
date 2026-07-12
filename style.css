@@ -125,7 +125,9 @@ a {
 
     .trending__discover {
         position: static;
-        margin: 40px auto;
+        margin: 50px auto;
+        width: 120px;
+        height: 120px;
         transform: none;
         flex-shrink: 0;
     }
@@ -427,6 +429,19 @@ a {
         padding: 16px 24px;
         font-size: 16px;
     }
+
+    .trending__discover {
+        position: static;
+        margin: 40px auto;
+        width: 105px;
+        height: 105px;
+        transform: none;
+        flex-shrink: 0;
+    }
+
+    .trending__discover p {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -538,15 +553,15 @@ a {
 
     .trending__discover {
         position: static;
-        margin: 24px auto;
-        width: 100px;
-        height: 100px;
+        margin: 32px auto;
+        width: 90px;
+        height: 90px;
         transform: none;
         flex-shrink: 0;
     }
 
     .trending__discover p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .subscription h2 {
