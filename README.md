@@ -1,6 +1,6 @@
 # PRODIGY_WD_01 🍣
 
-This is task number 1 following my internship for Prodigy InfoTech and for this task I will create a sushi landing page that uses HTML, CSS &amp; Javascript. I will use the HTML to structure the menu, CSS to style it as well as use Javascript to add interactivity such as changing the font color or background color of the menu when it is hovered over
+This is task number 1 following my internship for Prodigy InfoTech and for this task I will create a sushi landing page that uses HTML, CSS &amp; Javascript. I will use the HTML to structure the menu, CSS to style it as well as use Javascript to add interactivity such as changing the font color.
 
 Welcome to **Kazama's Sushi** — a vibrant and interactive landing page for a Japanese restaurant built with pure HTML, CSS &amp; JavaScript. This project brings the spirit of Japanese cuisine and the warmth of Omotenashi (おもてなし) to the web with modern animations, scroll-triggered reveals, and a playful anime-inspired aesthetic. 🎌✨
 
