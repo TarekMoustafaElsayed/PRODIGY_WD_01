@@ -6,6 +6,12 @@ Welcome to **Kazama's Sushi** — a vibrant and interactive landing page for a J
 
 ---
 
+## 🔗 Live Demo
+
+Check out the live site: [https://tarekmoustafaelsayed.github.io/PRODIGY_WD_01/](https://tarekmoustafaelsayed.github.io/PRODIGY_WD_01/)
+
+---
+
 ## 🧭 Sections Overview
 
 | Section | Description |
@@ -22,9 +28,12 @@ Welcome to **Kazama's Sushi** — a vibrant and interactive landing page for a J
 
 ## ✨ Interactive Features
 
+- **🎯 Animated header** — The sticky navigation bar animates on scroll, with background color transitions and a subtle shadow effect that activates as you move down the page.
 - **🔄 Auto-rotating reviews** — Customer testimonials automatically cycle every 5 seconds with a smooth swipe-in animation and updated avatar.
 - **🔢 Animated counter** — The "Happy Customers" digit counter smoothly animates up and down between 46k and 49k with a flip-digit effect.
 - **📜 Scroll reveal animations** — All sections fade and slide into view as you scroll down, powered by the Intersection Observer API.
+- **💳 Animated popular cards** — Food cards in the Popular section scale up and glow on hover, with smooth transitions on the star ratings and price tags.
+- **👣 Animated footer** — Footer links and social icons slide up with a staggered reveal animation when they enter the viewport.
 - **🎵 Hidden background music** — Press `Alt + Shift + O` to toggle a hidden background track (Guilty Gear Strive OST — "The Disaster of Passion").
 
 ---
