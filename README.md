@@ -6,12 +6,6 @@ Welcome to **Kazama's Sushi** — a vibrant and interactive landing page for a J
 
 ---
 
-## 🔗 Live Demo
-
-Check out the live site: [https://tarekmoustafaelsayed.github.io/PRODIGY_WD_01/](https://tarekmoustafaelsayed.github.io/PRODIGY_WD_01/)
-
----
-
 ## 🧭 Sections Overview
 
 | Section | Description |
@@ -70,6 +64,12 @@ Check out the live site: [https://tarekmoustafaelsayed.github.io/PRODIGY_WD_01/]
 ### Subscription Section
 
 ![Subscription Section](screenshots/Subscription-Section.png)
+
+---
+
+## 🔗 Live Demo
+
+Check out the live site: [https://tarekmoustafaelsayed.github.io/PRODIGY_WD_01/](https://tarekmoustafaelsayed.github.io/PRODIGY_WD_01/)
 
 ---
 
